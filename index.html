@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #f5f5f5; text-align: center; }
+        .product-card { background: white; border-radius: 15px; margin: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        img { width: 100%; border-radius: 10px; }
+        button { background: #248b6b; color: white; border: none; padding: 10px 20px; border-radius: 10px; width: 100%; }
+    </style>
+</head>
+<body>
+    <div id="catalog">
+        <div class="product-card">
+            <img src="flower.jpg">
+            <h3>Букет "Облако"</h3>
+            <p>4500 руб.</p>
+            <button onclick="order()">Заказать</button>
+        </div>
+    </div>
+
+    <script>
+        let tg = window.Telegram.WebApp;
+        tg.expand(); // Развернуть на весь экран
+
+        function order() {
+            tg.sendData("order_flower_1"); // Отправляет данные обратно боту
+            tg.close();
+        }
+    </script>
+</body>
+</html>
