@@ -10,7 +10,7 @@ TOKEN = "8710913470:AAFqTQKgjaMcY2d_7zKPfg_DUah5Xw4pVYA"
 ADMIN_ID = 856643486  # Твой ID
 FFMPEG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ffmpeg.exe')
 # Ссылка на твой будущий Mini App (пока можно использовать заглушку для теста)
-WEB_APP_URL = "https://твой-логин.github.io/my-flower-shop/" 
+WEB_APP_URL = "https://certonlive-spec.github.io/choza/" 
 
 PHOTO, NAME, DESC, PRICE = range(4)
 
@@ -125,3 +125,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
